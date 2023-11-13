@@ -4,8 +4,8 @@ import type Component from '@glimmer/component';
 import type EmberObject from '@ember/object';
 
 export default class TestService extends Service {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    foo(context: Component<any> | EmberObject): boolean {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types
+    foo(context: Component<{ Args: { Named: {}; Positional: [] } }> | EmberObject): boolean {
         console.log(context);
         return true;
     }
