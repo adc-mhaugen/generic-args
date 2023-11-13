@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+
+  "settings": {
+    "workbench.editor.labelFormat": "medium",
+
+    "search.exclude": {
+      "**/.lint-todo": true,
+      "**/dist": true,
+      "**/node_modules": true,
+      "**/docs": true
+    },
+
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "cSpell.words": [
+    ],
+    "git.ignoreLimitWarning": true
+  },
+
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "lifeart.vscode-ember-unstable",
+      "lifeart.vscode-glimmer-syntax",
+      "stylelint.vscode-stylelint",
+      "esbenp.prettier-vscode",
+      "typed-ember.glint-vscode"
+    ]
+  }
+}
